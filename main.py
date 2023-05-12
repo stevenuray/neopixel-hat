@@ -1,6 +1,3 @@
-# Trinket IO demo
-# Welcome to CircuitPython! :)
-
 import board
 from digitalio import DigitalInOut, Direction, Pull
 import adafruit_dotstar as dotstar
@@ -14,7 +11,7 @@ dot = dotstar.DotStar(board.APA102_SCK, board.APA102_MOSI, 1, brightness=0.2)
 led = DigitalInOut(board.D13)
 led.direction = Direction.OUTPUT
 
-# NeoPixel strip (of 12 LEDs)
+# NeoPixel strip of 12 LEDs on circular pcb
 NUMPIXELS = 12
 right_neopixels = neopixel.NeoPixel(board.D4, NUMPIXELS, brightness=1, auto_write=False)
 left_neopixels = neopixel.NeoPixel(board.D2, NUMPIXELS, brightness=1, auto_write=False)
@@ -212,6 +209,5 @@ while True:
   clockwise_counter_clockwise_to_viewer_rotation(right_neopixels, left_neopixels, dot, NUMPIXELS, 100)
   turn_on_all_lights_and_iterate_through_colors(right_neopixels, left_neopixels, dot, NUMPIXELS, 100)
   both_clockwise_to_viewer_rotation(right_neopixels, left_neopixels, dot, NUMPIXELS, 100)
-  #disable_previous_led_clockwise_to_viewer_rotation(right_neopixels, left_neopixels, j, NUMPIXELS)
   
   
