@@ -1,5 +1,5 @@
 import board
-from digitalio import DigitalInOut, Direction, Pull
+from digitalio import DigitalInOut, Direction
 import adafruit_dotstar as dotstar
 import time
 import neopixel
