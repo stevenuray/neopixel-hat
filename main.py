@@ -201,6 +201,8 @@ def turn_on_all_lights_and_iterate_through_colors(right_neopixels, left_neopixel
     turn_off_neopixels(right_neopixels, NUMPIXELS)
     turn_off_neopixels(left_neopixels, NUMPIXELS)
 
+
+
 ######################### MAIN LOOP ##############################
 
 while True:
